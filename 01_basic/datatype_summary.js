@@ -41,4 +41,24 @@ const myFunction = function(){
 console.log(myFunction);
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+let myYtName = "Manish123"
+let mynewYtName = myYtName
+
+console.log(mynewYtName);
+mynewYtName = "Manish42"
+console.log(mynewYtName);
+
+let userOne = {
+    email: "user@google.com",
+    name: "Manish",
+    age: 22
+}
+
+let userTwo = userOne
+console.log(userTwo.email);
+
+userTwo.email = "Manish@gmail.com";
+
+console.log(userOne.email);
