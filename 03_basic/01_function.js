@@ -42,6 +42,42 @@ console.log(LoggedInMessage());  //  gives undefined
 console.log(LoggedInMessage("manish"));
 
 
+function calculateCartPrice(...num) {
+    return num
+}
+
+console.log(calculateCartPrice(200, 525, 600, 552));
+
+function calculateCartPrice1(val1, val2, ...num) {
+    return num
+}
+
+console.log(calculateCartPrice1(200, 525, 600, 552));   // 200 stored in val1 and 525 stored on val2 and rest goes in num
 
 
+const userDetail = {
+    userName: "Manish",
+    price: 999
+}
 
+function handelObject(anyObject) {
+    console.log(`username is ${anyObject.userName} and the price is ${anyObject.price}`);
+}
+
+// handelObject(userDetail)
+
+handelObject({
+    userName: "Sam",
+    price: 555
+})
+
+
+const myArray = [220, 552, 856, 335, 223]
+
+function handelArray(anyArray) {
+    return anyArray[2]
+}
+
+// console.log(handelArray(myArray));
+
+console.log(handelArray([458, 668, 256, 456]));
